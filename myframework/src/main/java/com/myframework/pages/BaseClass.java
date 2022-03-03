@@ -15,6 +15,8 @@ import com.myframework.utility.Helper;
 public class BaseClass {
 	
 	//this is base class
+	//this is base class
+
 	public WebDriver driver;
 	public ExcelDataProvider excel;
 	public ConfigDataProvider config;
