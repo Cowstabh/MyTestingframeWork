@@ -17,11 +17,11 @@ public class LoginPage {
 	}
 
 //	@FindBy(xpath="//a[text()='Login']") WebElement loginOption;
-	@FindBy(name = "user-name")
+	@FindBy(xpath = "(//div//following::input)[1]")
 	WebElement uname;
-	@FindBy(name = "password")
+	@FindBy(xpath = "(//div//following::input)[2]")
 	WebElement pass;
-	@FindBy(name = "login-button")
+	@FindBy(xpath = "(//div//following::input)[3]")
 	WebElement loginButton;
 //	@FindBy(xpath="//div[text()='Login']") WebElement loginButton;
 

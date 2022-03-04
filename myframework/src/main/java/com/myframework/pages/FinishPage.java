@@ -19,7 +19,7 @@ public class FinishPage {
 	}
 	
 	
-	@FindBy(xpath="//button[text()='Finish']")
+	@FindBy(xpath="(//div//following::span[text()='Checkout: Overview']//following::button)[2]")
 	WebElement finishButton;
 	
 	

@@ -17,13 +17,13 @@ public class CheckOutPage {
 		this.driver=ldriver;
 	}
 	
-	@FindBy(name = "postalCode")
+	@FindBy(xpath = "(//div//following::input)[3]")
 	WebElement postalCode;
-	@FindBy(name = "lastName")
+	@FindBy(xpath = "(//div//following::input)[2]")
 	WebElement lastName;
-	@FindBy(name = "firstName")
+	@FindBy(xpath = "(//div//following::input)[1]")
 	WebElement firstName;
-	@FindBy(name="continue")
+	@FindBy(xpath ="(//div//following::input)[4]")
 	WebElement continueButton;
 	
 	public void checkOut(String firstNameCheckout,String lastNameCheckout,double postalCodeCheckout) throws InterruptedException

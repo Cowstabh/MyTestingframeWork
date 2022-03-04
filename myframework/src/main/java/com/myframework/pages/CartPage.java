@@ -21,9 +21,9 @@ public class CartPage {
 
 	@FindBy(xpath = "(//div[text()='Sauce Labs Onesie']//following::button[text()='Add to cart'])[1]")
 	WebElement addOnesie;
-	@FindBy(xpath = "//a[@class='shopping_cart_link']")
+	@FindBy(xpath = "(//div//following::a)[5]")
 	WebElement cartButton;
-	@FindBy(name = "checkout")
+	@FindBy(xpath = "(//div//following::button)[4]")
 	WebElement checkout;
 
 	public void cartSwagLabs() throws InterruptedException {
