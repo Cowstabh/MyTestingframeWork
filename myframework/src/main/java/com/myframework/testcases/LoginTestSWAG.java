@@ -20,6 +20,7 @@ public class LoginTestSWAG extends BaseClass
 	  CheckOutPage checkoutPage=PageFactory.initElements(driver,CheckOutPage.class);
 	  FinishPage finishPage=PageFactory.initElements(driver,FinishPage.class);
 	  
+	  
 	  loginPage.loginToSwagLabs(excel.getStringData("login", 0, 0), excel.getStringData("login", 0, 1));
 	  cartPage.cartSwagLabs();
 	  checkoutPage.checkOut(excel.getStringData("login", 0, 2), excel.getStringData("login", 0, 3), excel.getNumericData("login", 0, 4));
