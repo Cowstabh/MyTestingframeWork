@@ -8,6 +8,7 @@ import com.myframework.pages.CartPage;
 import com.myframework.pages.CheckOutPage;
 import com.myframework.pages.FinishPage;
 import com.myframework.pages.LoginPage;
+import com.myframework.utility.Reports;
 
 public class LoginTestSWAG extends BaseClass 
 {
@@ -19,11 +20,13 @@ public class LoginTestSWAG extends BaseClass
 	  CartPage cartPage=PageFactory.initElements(driver,CartPage.class);
 	  CheckOutPage checkoutPage=PageFactory.initElements(driver,CheckOutPage.class);
 	  FinishPage finishPage=PageFactory.initElements(driver,FinishPage.class);
+	  Reports report=new Reports();
 	  
 	  
 	  loginPage.loginToSwagLabs(excel.getStringData("login", 0, 0), excel.getStringData("login", 0, 1));
 	  cartPage.cartSwagLabs();
 	  checkoutPage.checkOut(excel.getStringData("login", 0, 2), excel.getStringData("login", 0, 3), excel.getNumericData("login", 0, 4));
 	  finishPage.finish();
+	  report.reports();
   }
 }
